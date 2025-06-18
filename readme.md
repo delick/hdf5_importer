@@ -45,3 +45,21 @@ For raster import, this plugin first import the data as vector, and then convert
 - **Nodata value**: The plugin will treat this value as nodata.
 
 [^2]: This may affect the resolution of the raster image. To avoid performance issues, do not set the pixel size too small.
+
+## FQA
+
+> [!WARNING] Missing pip dependencies?
+> Install pip dependencies based on your operating system:
+> **Windows**
+> 1. Open OSGeo4W Shell
+> 2. In OSGeo4W Shell, type pip installation command: 
+> ```python
+> pip install h5py # (Or any other missing dependencies it reports)
+> ```
+> **MacOS & Linux**
+> 1. Run QGIS
+> 2. Open Plugins -> Python Colsole
+> 3. Run command:
+> ```python
+> import pip; pip.main(['install', 'h5py']) # You may also add other missing dependencies.
+> ```

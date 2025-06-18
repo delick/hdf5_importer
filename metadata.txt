@@ -2,13 +2,16 @@
 name=HDF5 Importer
 qgisMinimumVersion=3.4
 description=Imports HDF5 satellite observations as vector points or helps prepare for raster conversion.
-about=This plugin allows users to select an HDF5 file, view its metadata, choose latitude and longitude variables, and load the data as a point vector layer in QGIS.
+about=This plugin allows users to select an HDF5 file, view its metadata, choose latitude and longitude variables, and load the data as a point vector layer in QGIS. \nRequires the following external Python libraries to be installed in your QGIS Python environment: h5py, numpy, and GDAL.\n\nTo install them, you can use pip from the OSGeo4W Shell (on Windows) or your system's terminal (on macOS/Linux). For example:\n\npip install h5py numpy GDAL
 version=1.3.1
 author=Delick
 email=delicktang@email.cugb.edu.cn
-icon=assets/icon.png
-homepage=https://github.com/delick/hdf5_importer/readme.md
+
+homepage=https://github.com/delick/hdf5_importer
 documentation=https://github.com/delick/hdf5_importer/readme.md
+tracker=https://github.com/delick/hdf5_importer/issues
+tags=hdf5,satellite
+icon=assets/icon.png
 
 [plugin_dependencies]
 plugin_dependencies=h5py, gdal
